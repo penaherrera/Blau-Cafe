@@ -1,0 +1,39 @@
+.slider {
+  /* width: 75vw; */
+  /* height: 100vh; */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 60s linear infinite;
+  width: calc(300px * 30);
+}
+.slider .slide {
+  width: 300px;
+  margin: 2px;
+}
+
+.slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 15));
+  }
+}
+
+/* RESPONSIVE PARA GALERIA DE IMAGENES */
+@media screen and (max-width: 792px) {
+  .slide {
+    height: 400px;
+  }
+}

@@ -1,0 +1,85 @@
+ /* *{
+    border: 1px solid red;
+}  */
+
+/* ABOUT US */
+
+
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT CARD */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  margin: 5px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.card img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.card-content {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.card-content p {
+  color: #666;
+}
+
+/* Responsive para about section */
+@media screen and (max-width:1262px){
+    .card img{
+        border-radius: 4px;
+        margin: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .card {
+        flex-flow: column;
+        width: auto;
+    }
+
+    .card img{
+        border-radius: 4px;
+        max-width: 100%; 
+    }
+
+    .card-content{
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 792px){
+    .card img{
+        max-width: 100%; 
+    }
+}
+
+@media screen and (max-width: 610px){
+    .card img{
+        margin: 0px;
+        border-radius: 8px 8px 0px 0px;
+    }
+}
+
+
